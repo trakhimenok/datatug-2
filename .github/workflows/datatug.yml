@@ -1,0 +1,14 @@
+name: DataTug Project Validator
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: datatug/datatug-project-validator@main
+        with:
+          path: ./datatug
