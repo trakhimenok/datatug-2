@@ -3,7 +3,7 @@ name: DataTug Project Validator
 on:
   pull_request:
   push:
-
+    branches: [main]
 jobs:
   validate:
     runs-on: ubuntu-latest
